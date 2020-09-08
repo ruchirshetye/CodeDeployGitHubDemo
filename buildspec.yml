@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      golang: 1.13
+  pre_build:
+    commands:
+      - echo 'Im a a.yml Build Spec'
+  build:
+    commands:
+      - echo 'Compiling the Java Code'
+  post_build:
+    commands:
+      - echo "a.yml Build Spec - Build Complete"
